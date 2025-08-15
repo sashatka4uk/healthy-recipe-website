@@ -1,0 +1,42 @@
+/*******************\
+    Global
+\*******************/
+
+@use "variables" as *;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 74.5rem;
+  margin-inline: auto;
+}
+
+body {
+  background-color: $col-neutral-100;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

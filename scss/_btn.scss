@@ -1,0 +1,23 @@
+/*******************\
+    Btn
+\*******************/
+
+@use "font" as *;
+@use "variables" as *;
+
+.btn {
+  @include Nunito-B-20-140;
+  background-color: $col-neutral-600;
+  color: $col-white;
+  padding: 0.75rem 1rem;
+  border-radius: $br-10;
+
+  &:active {
+    background-color: $col-neutral-900;
+  }
+
+  &:focus {
+    outline: 3px solid $col-neutral-900;
+    outline-offset: 3px;
+  }
+}
