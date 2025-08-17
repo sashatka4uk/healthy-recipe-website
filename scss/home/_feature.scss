@@ -1,0 +1,33 @@
+/*******************\
+    Feature 
+\*******************/
+@use "../variables" as *;
+@use "../font" as *;
+
+.feature {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid $col-neutral-300;
+  &__heading {
+    text-align: center;
+    @include Nunito-EB-48-120;
+    color: $col-neutral-900;
+    margin-bottom: 3rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+    gap: 2rem;
+  }
+
+  &__img-box {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: $col-white;
+    border-radius: $br-12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+}
