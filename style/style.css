@@ -60,12 +60,26 @@ ol {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.container {
+  max-width: 74.5rem;
+  margin-inline: auto;
+}
+
+.hide__desktop {
+  display: none;
+}
+
+.hide__mobile {
+  display: none;
 }
 
 /*******************\
@@ -206,4 +220,90 @@ button {
 .btn:focus {
   outline: 3px solid #163a34;
   outline-offset: 3px;
+}
+.btn--big {
+  padding: 1rem 2rem;
+}
+
+/*******************\
+    Home page styles
+\*******************/
+/*******************\
+    Hero 
+\*******************/
+.hero {
+  padding: 5rem 0 5.25rem;
+  /*******************\
+            Here must be some Css code for background line
+            and i dont know how to do this properly  🫣
+  \*******************/
+  position: relative;
+}
+.hero__inner {
+  /*******************\
+  &::after {
+    content: "";
+    width: 100vh;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(../assets/images/pattern-squiggle-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+  }
+    \*******************/
+}
+.hero__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.hero__heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 110%;
+  letter-spacing: -2px;
+  color: #163a34;
+  margin-bottom: 0.75rem;
+  /*******************\
+      Make orange background first word
+  \*******************/
+}
+.hero__heading span {
+  position: relative;
+}
+.hero__heading span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.7rem;
+  width: 100%;
+  height: 2.4375rem;
+  background: #fcd5c3;
+  border-radius: 4px;
+  z-index: -1;
+}
+.hero__text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  color: #395852;
+  margin-bottom: 2.5rem;
+  max-width: 36.25rem;
+}
+.hero__imgs {
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+.hero img {
+  border-radius: 12px;
 }

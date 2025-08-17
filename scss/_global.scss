@@ -33,10 +33,24 @@ ol {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.container {
+  max-width: 74.5rem;
+  margin-inline: auto;
+}
+
+.hide__desktop {
+  display: none;
+}
+
+.hide__mobile {
+  display: none;
 }
