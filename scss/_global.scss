@@ -45,12 +45,28 @@ button {
 .container {
   max-width: 74.5rem;
   margin-inline: auto;
+
+  @media (max-width: 850px) {
+    max-width: 48rem;
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 450px) {
+    max-width: 23.4375rem;
+    padding: 0 1rem;
+  }
 }
 
 .hide__desktop {
   display: none;
+  @media (max-width: 850px) {
+    display: block;
+  }
 }
 
 .hide__mobile {
-  display: none;
+  display: block;
+  @media (max-width: 850px) {
+    display: none;
+  }
 }

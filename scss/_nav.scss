@@ -32,6 +32,7 @@
   .open.nav {
     right: 2.5rem;
     display: flex;
+    z-index: 9999;
     @media (max-width: 450px) {
       right: 1rem;
     }

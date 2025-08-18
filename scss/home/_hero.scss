@@ -6,6 +6,12 @@
 
 .hero {
   padding: 5rem 0 5.25rem;
+  @media (max-width: 850px) {
+    padding: 3rem 0 5rem;
+  }
+  @media (max-width: 450px) {
+    padding: 3rem 0 4rem;
+  }
 
   /*******************\
             Here must be some Css code for background line
@@ -37,12 +43,26 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
+    @media (max-width: 850px) {
+      align-items: flex-start;
+      text-align: left;
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__heading {
     @include Nunito-EB-72-110;
     color: $col-neutral-900;
     margin-bottom: 0.75rem;
+    @media (max-width: 850px) {
+      @include Nunito-EB-64-110;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 450px) {
+      @include Nunito-EB-52-110;
+      margin-bottom: 1rem;
+    }
     /*******************\
         Make orange background first word
     \*******************/
@@ -67,6 +87,12 @@
     color: $col-neutral-600;
     margin-bottom: 2.5rem;
     max-width: 36.25rem;
+    @media (max-width: 850px) {
+      max-width: none;
+    }
+    @media (max-width: 450px) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__imgs {

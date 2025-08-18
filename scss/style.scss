@@ -4,6 +4,8 @@
 @use "header";
 @use "nav";
 @use "btn";
+@use "cta";
+@use "footer";
 
 /*******************\
     Home page styles
@@ -12,3 +14,4 @@
 @use "home/hero";
 @use "home/feature";
 @use "home/text_box";
+@use "home/real-life";

@@ -42,6 +42,7 @@
         <button class="nav__btn btn">Browse recipes</button>
       </nav>
     </header>
+
     <main>
       <section class="hero">
         <div class="hero__inner container">
@@ -57,7 +58,7 @@
           </div>
           <div class="hero__imgs">
             <img
-              class=""
+              class="hide__mobile"
               src="assets/images/image-home-hero-large.webp"
               alt="Hero img"
             />
@@ -120,7 +121,73 @@
           </div>
         </div>
       </section>
+
+      <section class="real-life container">
+        <div class="real-life__content">
+          <h3 class="real-life__heading">Built for real life</h3>
+          <p class="real-life__text">
+            Cooking shouldn’t be complicated. These recipes come in under
+            <span>30 minutes</span> of active time, fit busy schedules, and
+            taste good enough to repeat.
+          </p>
+          <p class="real-life__text">
+            Whether you’re new to the kitchen or just need fresh ideas, we’ve
+            got you covered.
+          </p>
+        </div>
+        <div class="real-life__img">
+          <img
+            class="hide__mobile"
+            src="assets/images/image-home-real-life-large.webp"
+            alt="Home real life"
+          />
+          <img
+            class="hide__desktop"
+            src="assets/images/image-home-real-life-small.webp"
+            alt="Home real life"
+          />
+        </div>
+      </section>
+
+      <section class="cta container">
+        <div class="cta__content">
+          <h2 class="cta__heading">Ready to cook smarter?</h2>
+          <p class="cta__text">
+            Hit the button, pick a recipe, and get dinner on the table—fast.
+          </p>
+          <a href="recipes.html" class="btn btn--big">Browse recipes</a>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer container">
+      <p class="footer__text">Made with ❤️ and 🥑</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/" class="footer__link">
+          <img
+            src="assets/images/icon-instagram.svg"
+            alt="Instagram sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.bsky.app" class="footer__link">
+          <img
+            src="assets/images/icon-bluesky.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.tiktok.com" class="footer__link">
+          <img
+            src="assets/images/icon-tiktok.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
