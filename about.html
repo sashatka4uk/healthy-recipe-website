@@ -1,77 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Frontend Mentor | Recipe finder website</title>
+  </head>
+  <body>
+    <header class="header__main">
+      <a href="about.html" class="header__logo">
+        <img
+          src="assets/images/logo.svg"
+          alt="Healthy Recipe Finder site logo"
+          width="260"
+          height="40"
+        />
+      </a>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe finder website</title>
-</head>
-<body>
+      <button class="header__mobile">
+        <img
+          src="assets/images/icon-hamburger-menu.svg"
+          alt="Open mobile navigation"
+        />
+      </button>
 
-  Our mission
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
 
-  Help more people cook nourishing meals, more often.
+          <li class="nav__item">
+            <a href="about.html" class="nav__link nav__active">About</a>
+          </li>
 
-  Healthy Recipe Finder was created to prove that healthy 
-  eating can be convenient, affordable, and genuinely delicious. 
+          <li class="nav__item">
+            <a href="recipes.html" class="nav__link">Recipes</a>
+          </li>
+        </ul>
 
-  We showcase quick, whole-food dishes that anyone can master—no 
-  fancy equipment, no ultra-processed shortcuts—just honest 
-  ingredients and straightforward steps.
+        <button class="nav__btn btn">Browse recipes</button>
+      </nav>
+    </header>
 
-  Why we exist
+    <main>
+      <section class="mission container">
+        <div class="mission__inner">
+          <div class="mission__content">
+            <h2 class="mission__heading">Our mission</h2>
 
-  Cut through the noise. 
-  The internet is bursting with recipes, yet most busy cooks 
-  still default to take-away or packaged foods. We curate a 
-  tight collection of fool-proof dishes so you can skip the 
-  scrolling and start cooking.
+            <p class="mission__sub-heading">
+              Help more people cook nourishing meals, more often.
+            </p>
 
-  Empower home kitchens. 
-  When you control what goes into your meals, you control how 
-  you feel. Every recipe is built around unrefined ingredients 
-  and ready in about half an hour of active prep.
+            <p class="mission__text">
+              Healthy Recipe Finder was created to prove that healthy eating can
+              be convenient, affordable, and genuinely delicious.
+            </p>
+            <p class="mission__text">
+              We showcase quick, whole-food dishes that anyone can master—no
+              fancy equipment, no ultra-processed shortcuts—just honest
+              ingredients and straightforward steps.
+            </p>
+          </div>
+          <div class="mission__img">
+            <img
+              class="hide__mobile"
+              src="assets/images/image-about-our-mission-large.webp"
+              alt="Image about our mission"
+            />
+            <img
+              class="hide__desktop"
+              src="assets/images/image-about-our-mission-small.webp"
+              alt="Image about our mission"
+            />
+          </div>
+        </div>
+      </section>
 
-  Make healthy look good. 
-  High-resolution imagery shows you exactly what success looks 
-  like—because we eat with our eyes first, and confidence matters.
+      <section class="list container">
+        <div class="list__inner">
+          <h2 class="list__heading">Why we exist</h2>
 
-  Our food philosophy
+          <div class="list__list">
+            <div class="list__item">
+              <img
+                src="assets/images/icon-bullet-point.svg"
+                alt="Icon bullet point"
+              />
+              <div class="list__text-box">
+                <h3 class="list__text-heading">Cut through the noise.</h3>
 
-  Whole ingredients first. 
-  Fresh produce, grains, legumes, herbs, and quality fats form the 
-  backbone of every recipe.
+                <p class="list__text-text">
+                  The internet is bursting with recipes, yet most busy cooks
+                  still default to take-away or packaged foods. We curate a
+                  tight collection of fool-proof dishes so you can skip the
+                  scrolling and start cooking.
+                </p>
+              </div>
+            </div>
 
-  Flavor without compromise. 
-  Spices, citrus, and natural sweetness replace excess salt, sugar, 
-  and additives.
+            <div class="list__item">
+              <img
+                src="assets/images/icon-bullet-point.svg"
+                alt="Icon bullet point"
+              />
+              <div class="list__text-box">
+                <h3 class="list__text-heading">Empower home kitchens.</h3>
 
-  Respect for time. 
-  Weeknight meals should slot into real schedules; weekend cooking 
-  can be leisurely but never wasteful.
+                <p class="list__text-text">
+                  When you control what goes into your meals, you control how
+                  you feel. Every recipe is built around unrefined ingredients
+                  and ready in about half an hour of active prep.
+                </p>
+              </div>
+            </div>
 
-  Sustainable choices. 
-  Short ingredient lists cut down on food waste and carbon footprint, 
-  while plant-forward dishes keep things planet-friendly.
+            <div class="list__item">
+              <img
+                src="assets/images/icon-bullet-point.svg"
+                alt="Icon bullet point"
+              />
+              <div class="list__text-box">
+                <h3 class="list__text-heading">Make healthy look good.</h3>
 
-  Beyond the plate
+                <p class="list__text-text">
+                  High-resolution imagery shows you exactly what success looks
+                  like—because we eat with our eyes first, and confidence
+                  matters.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  We believe food is a catalyst for community and well-being. 
-  By sharing approachable recipes, we hope to:
+      <section class="list container">
+        <div class="list__inner">
+          <h2 class="list__heading">Our food philosophy</h2>
 
-  Encourage family dinners and social cooking.
-  Reduce reliance on single-use packaging and delivery waste.
-  Spark curiosity about seasonal produce and local agriculture.
+          <div class="list__list">
+            <div class="list__item">
+              <img
+                src="assets/images/icon-bullet-point.svg"
+                alt="Icon bullet point"
+              />
+              <div class="list__text-box">
+                <h3 class="list__text-heading">Whole ingredients first.</h3>
 
-  Ready to cook smarter?
+                <p class="list__text-text">
+                  Fresh produce, grains, legumes, herbs, and quality fats form
+                  the backbone of every recipe.
+                </p>
+              </div>
+            </div>
 
-  Hit the button, pick a recipe, and get dinner on the table—fast.
+            <div class="list__item">
+              <img
+                src="assets/images/icon-bullet-point.svg"
+                alt="Icon bullet point"
+              />
+              <div class="list__text-box">
+                <h3 class="list__text-heading">Flavor without compromise.</h3>
 
-  Browse recipes
+                <p class="list__text-text">
+                  Spices, citrus, and natural sweetness replace excess salt,
+                  sugar, and additives.
+                </p>
+              </div>
+            </div>
 
-  Made with ❤️ and 🥑
+            <div class="list__item">
+              <img
+                src="assets/images/icon-bullet-point.svg"
+                alt="Icon bullet point"
+              />
+              <div class="list__text-box">
+                <h3 class="list__text-heading">Respect for time.</h3>
 
-</body>
+                <p class="list__text-text">
+                  Weeknight meals should slot into real schedules; weekend
+                  cooking can be leisurely but never wasteful.
+                </p>
+              </div>
+            </div>
+
+            <div class="list__item">
+              <img
+                src="assets/images/icon-bullet-point.svg"
+                alt="Icon bullet point"
+              />
+              <div class="list__text-box">
+                <h3 class="list__text-heading">Sustainable choices.</h3>
+
+                <p class="list__text-text">
+                  Short ingredient lists cut down on food waste and carbon
+                  footprint, while plant-forward dishes keep things
+                  planet-friendly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="beyond container">
+        <div class="beyond__inner">
+          <div class="beyond__text-box">
+            <h2 class="beyond__heading">Beyond the plate</h2>
+            <p class="beyond__text">
+              We believe food is a catalyst for community and well-being. By
+              sharing approachable recipes, we hope to:
+            </p>
+            <ul class="beyond__list">
+              <li class="beyond__list-item">
+                Encourage family dinners and social cooking.
+              </li>
+
+              <li class="beyond__list-item">
+                Reduce reliance on single-use packaging and delivery waste.
+              </li>
+
+              <li class="beyond__list-item">
+                Spark curiosity about seasonal produce and local agriculture.
+              </li>
+            </ul>
+          </div>
+          <div class="beyond__img">
+            <img
+              class="hide__mobile"
+              src="assets/images/image-about-beyond-the-plate-large.webp"
+              alt="Image about beyond the plate"
+            />
+            <img
+              class="hide__desktop"
+              src="assets/images/image-about-beyond-the-plate-small.webp"
+              alt="Image about beyond the plate"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="cta container">
+        <div class="cta__content">
+          <h2 class="cta__heading">Ready to cook smarter?</h2>
+          <p class="cta__text">
+            Hit the button, pick a recipe, and get dinner on the table—fast.
+          </p>
+          <a href="recipes.html" class="btn btn--big">Browse recipes</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="footer__text">Made with ❤️ and 🥑</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/" class="footer__link">
+          <img
+            src="assets/images/icon-instagram.svg"
+            alt="Instagram sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.bsky.app" class="footer__link">
+          <img
+            src="assets/images/icon-bluesky.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.tiktok.com" class="footer__link">
+          <img
+            src="assets/images/icon-tiktok.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
