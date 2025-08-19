@@ -1129,3 +1129,161 @@ button {
   letter-spacing: -0.3px;
   color: #395852;
 }
+
+/*******************\
+    Recipe page styles
+\*******************/
+/*******************\
+    Breadcrumps
+\*******************/
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.breadcrumbs__link {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+  color: #6f857f;
+}
+.breadcrumbs__recipe-name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: -0.3px;
+  color: #163a34;
+}
+.breadcrumbs__recipe-name span {
+  margin-inline: 6px;
+}
+
+/*******************\
+    Description
+\*******************/
+.description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+.description__heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #163a34;
+}
+@media (max-width: 850px) {
+  .description__heading {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 120%;
+    letter-spacing: -2px;
+  }
+}
+.description__text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  color: #395852;
+}
+
+/*******************\
+    Ingridients
+\*******************/
+.ingridients__heading,
+.instructions__heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: #163a34;
+  margin-bottom: 1rem;
+}
+.ingridients__list,
+.instructions__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.ingridients__item,
+.instructions__item {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  color: #395852;
+}
+
+/*******************\
+    instruction
+\*******************/
+/*******************\
+    Recipe
+\*******************/
+.recipe__inner {
+  padding: 3rem 0 4rem;
+  border-bottom: 1px solid #e0e6e3;
+}
+@media (max-width: 850px) {
+  .recipe__inner {
+    padding: 3rem 0;
+  }
+}
+.recipe__box {
+  display: flex;
+  column-gap: 2.5rem;
+}
+@media (max-width: 850px) {
+  .recipe__box {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+}
+.recipe__imgs {
+  flex: 0 1 36.25rem;
+}
+@media (max-width: 850px) {
+  .recipe__imgs {
+    flex: none;
+  }
+}
+.recipe__imgs > * {
+  border-radius: 10px;
+}
+
+/*******************\
+    More
+\*******************/
+.more {
+  border-bottom: 1px solid #e0e6e3;
+}
+.more__inner {
+  padding: 4rem 0 6rem;
+}
+@media (max-width: 850px) {
+  .more__inner {
+    padding: 3rem 0;
+  }
+}
+.more__heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 130%;
+  letter-spacing: -1px;
+  color: #163a34;
+  margin-bottom: 1.5rem;
+}

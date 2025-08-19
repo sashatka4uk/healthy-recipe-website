@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Frontend Mentor | Recipe finder website</title>
+  </head>
+  <body>
+    <header class="header__main">
+      <a href="about.html" class="header__logo">
+        <img
+          src="assets/images/logo.svg"
+          alt="Healthy Recipe Finder site logo"
+          width="260"
+          height="40"
+        />
+      </a>
+
+      <button class="header__mobile">
+        <img
+          src="assets/images/icon-hamburger-menu.svg"
+          alt="Open mobile navigation"
+        />
+      </button>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="recipes.html" class="nav__link nav__active">Recipes</a>
+          </li>
+        </ul>
+
+        <a href="recipes.html" class="nav__btn btn">Browse recipes</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="recipe container">
+        <div class="recipe__inner">
+          <div class="recipe__breadcrumbs breadcrumbs">
+            <a href="../recipes.html" class="breadcrumbs__link">Recipes</a>
+            <p class="breadcrumbs__recipe-name">
+              <span>/</span> One-Pan Lemon Garlic Salmon with Asparagus
+            </p>
+          </div>
+          <div class="recipe__box">
+            <div class="recipe__imgs">
+              <img
+                class="hide__mobile"
+                src="assets/images/salmon-asparagus-large.webp"
+                alt="One-Pan Lemon Garlic Salmon with Asparagus"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/salmon-asparagus-small.webp"
+                alt="One-Pan Lemon Garlic Salmon with Asparagus"
+              />
+            </div>
+            <div class="recipe__description description">
+              <h1 class="description__heading">
+                One-Pan Lemon Garlic Salmon with Asparagus
+              </h1>
+
+              <p class="description__text">
+                A 15-minute weeknight dinner of flaky salmon and tender
+                asparagus.
+              </p>
+
+              <div class="description__details details">
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-servings.svg"
+                    alt="Icon servings"
+                  />
+                  Servings: 2
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-prep-time.svg"
+                    alt="Icon prep time"
+                  />
+                  Prep: 5 mins
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-cook-time.svg"
+                    alt="Icon cook time"
+                  />
+                  Cook: 12 min
+                </div>
+              </div>
+
+              <section class="description__ingridients ingridients">
+                <h2 class="ingridients__heading">Ingredients:</h2>
+                <ul class="ingridients__list">
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    2 salmon fillets (125 g each)
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    200 g asparagus spears, trimmed
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    1 Tbsp extra-virgin olive oil
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    2 garlic cloves, minced
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    1/2 lemon, sliced
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Sea salt & black pepper
+                  </li>
+                </ul>
+              </section>
+
+              <section class="description__instructions instructions">
+                <h2 class="instructions__heading">Instructions:</h2>
+                <ul class="instructions__list">
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Heat a large skillet over medium-high with olive oil
+                  </li>
+
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Season salmon and asparagus with salt, pepper, and minced
+                    garlic.
+                  </li>
+
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Place salmon skin-side down; arrange asparagus around.
+                  </li>
+
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Cook 4 min, flip salmon, add lemon slices, cook 4-5 min more
+                    until salmon is opaque.", "Serve hot with pan juices.
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="more container">
+        <div class="more__inner">
+          <h2 class="more__heading">More recipes</h2>
+          <section class="meals">
+            <div class="meals__card">
+              <div class="meals__img">
+                <img
+                  class="hide__mobile"
+                  src="assets/images/quinoa-veggie-bowl-large.webp"
+                  alt="Quinoa veggie bowl"
+                />
+                <img
+                  class="hide__desktop"
+                  src="assets/images/quinoa-veggie-bowl-small.webp"
+                  alt="Quinoa veggie bowl"
+                />
+              </div>
+              <div class="meals__info info">
+                <h2 class="info__heading">Quinoa Veggie Power Bowl</h2>
+                <p class="info__text">
+                  A balanced bowl of fluffy quinoa, roasted veggies and healthy
+                  fats.
+                </p>
+              </div>
+              <div class="meals__details details">
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-servings.svg"
+                    alt="Icon servings"
+                  />
+                  Servings: 2
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-prep-time.svg"
+                    alt="Icon prep time"
+                  />
+                  Prep: 10 mins
+                </div>
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-cook-time.svg"
+                    alt="Icon cook time"
+                  />
+                  Cook: 15 min
+                </div>
+              </div>
+              <a
+                href="_quinoa-veggie-power-bowl.html"
+                class="meals__btn btn btn--recipe"
+                >View Recipe</a
+              >
+            </div>
+
+            <div class="meals__card">
+              <div class="meals__img">
+                <img
+                  class="hide__mobile"
+                  src="assets/images/sweet-potato-tacos-large.webp"
+                  alt="Sweet potato tacos"
+                />
+                <img
+                  class="hide__desktop"
+                  src="assets/images/sweet-potato-tacos-small.webp"
+                  alt="Sweet potato tacos"
+                />
+              </div>
+              <div class="meals__info info">
+                <h2 class="info__heading">Sweet Potato Black Bean Tacos</h2>
+                <p class="info__text">
+                  Smoky roasted sweet potatoes and black beans tucked into warm
+                  tortillas.
+                </p>
+              </div>
+              <div class="meals__details details">
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-servings.svg"
+                    alt="Icon servings"
+                  />
+                  Servings: 3
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-prep-time.svg"
+                    alt="Icon prep time"
+                  />
+                  Prep: 10 mins
+                </div>
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-cook-time.svg"
+                    alt="Icon cook time"
+                  />
+                  Cook: 15 min
+                </div>
+              </div>
+              <a
+                href="sweet-potato-black-bean-tacos.html"
+                class="meals__btn btn btn--recipe"
+                >View Recipe</a
+              >
+            </div>
+
+            <div class="meals__card">
+              <div class="meals__img">
+                <img
+                  class="hide__mobile"
+                  src="assets/images/greek-yogurt-large.webp"
+                  alt="Greek yogurt"
+                />
+                <img
+                  class="hide__desktop"
+                  src="assets/images/greek-yogurt-small.webp"
+                  alt="Greek yogurt"
+                />
+              </div>
+              <div class="meals__info info">
+                <h2 class="info__heading">Greek Yogurt Berry Parfait</h2>
+                <p class="info__text">
+                  Layers of creamy yogurt, fresh berries and crunchy oats for a
+                  high-protein snack.
+                </p>
+              </div>
+              <div class="meals__details details">
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-servings.svg"
+                    alt="Icon servings"
+                  />
+                  Servings: 1
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-prep-time.svg"
+                    alt="Icon prep time"
+                  />
+                  Prep: 5 mins
+                </div>
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-cook-time.svg"
+                    alt="Icon cook time"
+                  />
+                  Cook: 0 min
+                </div>
+              </div>
+              <a
+                href="greek-yogurt-berry-parfait.html"
+                class="meals__btn btn btn--recipe"
+                >View Recipe</a
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="footer__text">Made with ❤️ and 🥑</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/" class="footer__link">
+          <img
+            src="assets/images/icon-instagram.svg"
+            alt="Instagram sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.bsky.app" class="footer__link">
+          <img
+            src="assets/images/icon-bluesky.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.tiktok.com" class="footer__link">
+          <img
+            src="assets/images/icon-tiktok.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

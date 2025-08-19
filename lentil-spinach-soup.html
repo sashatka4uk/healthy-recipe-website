@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Frontend Mentor | Recipe finder website</title>
+  </head>
+  <body>
+    <header class="header__main">
+      <a href="about.html" class="header__logo">
+        <img
+          src="assets/images/logo.svg"
+          alt="Healthy Recipe Finder site logo"
+          width="260"
+          height="40"
+        />
+      </a>
+
+      <button class="header__mobile">
+        <img
+          src="assets/images/icon-hamburger-menu.svg"
+          alt="Open mobile navigation"
+        />
+      </button>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="recipes.html" class="nav__link nav__active">Recipes</a>
+          </li>
+        </ul>
+
+        <a href="recipes.html" class="nav__btn btn">Browse recipes</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="recipe container">
+        <div class="recipe__inner">
+          <div class="recipe__breadcrumbs breadcrumbs">
+            <a href="../recipes.html" class="breadcrumbs__link">Recipes</a>
+            <p class="breadcrumbs__recipe-name">
+              <span>/</span> Lentil & Spinach Soup
+            </p>
+          </div>
+          <div class="recipe__box">
+            <div class="recipe__imgs">
+              <img
+                class="hide__mobile"
+                src="assets/images/lentil-soup-large.webp"
+                alt="Lentil & Spinach Soup"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/lentil-soup-small.webp"
+                alt="Lentil & Spinach Soup"
+              />
+            </div>
+            <div class="recipe__description description">
+              <h1 class="description__heading">Lentil & Spinach Soup</h1>
+
+              <p class="description__text">
+                A hearty 30-minute soup rich in plant protein and iron.
+              </p>
+
+              <div class="description__details details">
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-servings.svg"
+                    alt="Icon servings"
+                  />
+                  Servings: 4
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-prep-time.svg"
+                    alt="Icon prep time"
+                  />
+                  Prep: 10 mins
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-cook-time.svg"
+                    alt="Icon cook time"
+                  />
+                  Cook: 20 min
+                </div>
+              </div>
+
+              <section class="description__ingridients ingridients">
+                <h2 class="ingridients__heading">Ingredients:</h2>
+                <ul class="ingridients__list">
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    1 Tbsp olive oil
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    1 onion, diced
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    1 carrot, diced
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    1 celery stalk, diced
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    2 garlic cloves, minced
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    1 cup dry red lentils, rinsed
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    400 g canned diced tomatoes
+                  </li>
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    4 cups vegetable broth
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    2 cups baby spinach
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    1/2 tsp ground cumin
+                  </li>
+
+                  <li class="ingridients__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Sea salt & black pepper to taste
+                  </li>
+                </ul>
+              </section>
+
+              <section class="description__instructions instructions">
+                <h2 class="instructions__heading">Instructions:</h2>
+                <ul class="instructions__list">
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Heat oil in a pot; sauté onion, carrot, celery 4 min.
+                  </li>
+
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Add garlic & cumin; cook 1 min.
+                  </li>
+
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Stir in lentils, tomatoes and broth; bring to boil.
+                  </li>
+
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Simmer 15 min until lentils tender.
+                  </li>
+
+                  <li class="instructions__item">
+                    <img
+                      src="assets/images/icon-bullet-point.svg"
+                      alt="icon bullet point"
+                    />
+                    Stir in spinach until wilted, season and serve.
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="more container">
+        <div class="more__inner">
+          <h2 class="more__heading">More recipes</h2>
+          <section class="meals">
+            <div class="meals__card">
+              <div class="meals__img">
+                <img
+                  class="hide__mobile"
+                  src="assets/images/avocado-tomato-wholegrain-toast-large.webp"
+                  alt="Avocado tomato wholegrain toast "
+                />
+                <img
+                  class="hide__desktop"
+                  src="assets/images/avocado-tomato-wholegrain-toast-small.webp"
+                  alt="Avocado tomato wholegrain toast  "
+                />
+              </div>
+              <div class="meals__info info">
+                <h2 class="info__heading">Avocado & Tomato Wholegrain Toast</h2>
+                <p class="info__text">
+                  Creamy avocado spread over toasted wholegrain bread, topped
+                  with juicy tomatoes.
+                </p>
+              </div>
+              <div class="meals__details details">
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-servings.svg"
+                    alt="Icon servings"
+                  />
+                  Servings: 1
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-prep-time.svg"
+                    alt="Icon prep time"
+                  />
+                  Prep: 5 mins
+                </div>
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-cook-time.svg"
+                    alt="Icon cook time"
+                  />
+                  Cook: 5 min
+                </div>
+              </div>
+              <a
+                href="avocado-tomato-wholegrain-toast.html"
+                class="meals__btn btn btn--recipe"
+                >View Recipe</a
+              >
+            </div>
+
+            <div class="meals__card">
+              <div class="meals__img">
+                <img
+                  class="hide__mobile"
+                  src="assets/images/salmon-asparagus-large.webp"
+                  alt="Salmon asparagus large "
+                />
+                <img
+                  class="hide__desktop"
+                  src="assets/images/salmon-asparagus-small.webp"
+                  alt="Salmon asparagus large "
+                />
+              </div>
+              <div class="meals__info info">
+                <h2 class="info__heading">
+                  One-Pan Lemon Garlic Salmon with Asparagus
+                </h2>
+                <p class="info__text">
+                  A 15-minute weeknight dinner of flaky salmon and tender
+                  asparagus.
+                </p>
+              </div>
+              <div class="meals__details details">
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-servings.svg"
+                    alt="Icon servings"
+                  />
+                  Servings: 2
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-prep-time.svg"
+                    alt="Icon prep time"
+                  />
+                  Prep: 5 mins
+                </div>
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-cook-time.svg"
+                    alt="Icon cook time"
+                  />
+                  Cook: 12 min
+                </div>
+              </div>
+              <a
+                href="one-pan-lemon-garlic-salmon-with-asparagus.html"
+                class="meals__btn btn btn--recipe"
+                >View Recipe</a
+              >
+            </div>
+
+            <div class="meals__card">
+              <div class="meals__img">
+                <img
+                  class="hide__mobile"
+                  src="assets/images/quinoa-veggie-bowl-large.webp"
+                  alt="Quinoa veggie bowl"
+                />
+                <img
+                  class="hide__desktop"
+                  src="assets/images/quinoa-veggie-bowl-small.webp"
+                  alt="Quinoa veggie bowl"
+                />
+              </div>
+              <div class="meals__info info">
+                <h2 class="info__heading">Quinoa Veggie Power Bowl</h2>
+                <p class="info__text">
+                  A balanced bowl of fluffy quinoa, roasted veggies and healthy
+                  fats.
+                </p>
+              </div>
+              <div class="meals__details details">
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-servings.svg"
+                    alt="Icon servings"
+                  />
+                  Servings: 2
+                </div>
+
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-prep-time.svg"
+                    alt="Icon prep time"
+                  />
+                  Prep: 10 mins
+                </div>
+                <div class="details__element">
+                  <img
+                    src="assets/images/icon-cook-time.svg"
+                    alt="Icon cook time"
+                  />
+                  Cook: 15 min
+                </div>
+              </div>
+              <a
+                href="_quinoa-veggie-power-bowl.html"
+                class="meals__btn btn btn--recipe"
+                >View Recipe</a
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="footer__text">Made with ❤️ and 🥑</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/" class="footer__link">
+          <img
+            src="assets/images/icon-instagram.svg"
+            alt="Instagram sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.bsky.app" class="footer__link">
+          <img
+            src="assets/images/icon-bluesky.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.tiktok.com" class="footer__link">
+          <img
+            src="assets/images/icon-tiktok.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

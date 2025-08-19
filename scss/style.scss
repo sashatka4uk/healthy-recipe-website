@@ -34,3 +34,14 @@
 @use "recipes/meals";
 @use "recipes/info";
 @use "recipes/details";
+
+/*******************\
+    Recipe page styles
+\*******************/
+
+@use "recipe/breadcrumbs";
+@use "recipe/description";
+@use "recipe/ingridients";
+@use "recipe/instructions";
+@use "recipe/recipe";
+@use "recipe/more";
