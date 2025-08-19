@@ -10,24 +10,7 @@
   font-family: "Nunito Sans";
   src: url(../assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLCopszwdthwght.ttf);
 }
-/*******************\
- ⚠️ Fonts presets ⚠️ 
-\*******************/
-/*******************\
-    Nunito 
-\*******************/
-/*******************\
-    Nunito Sans
-\*******************/
-/*******************\
-    Variables 
-\*******************/
-/*******************\
-    Colors 🌈
-\*******************/
-/*******************\
-    Border radius
-\*******************/
+
 /*******************\
     Global
 \*******************/
@@ -172,7 +155,8 @@ button {
   display: flex;
   column-gap: 2.5rem;
 }
-.nav__link:link, .nav__link:visited {
+.nav__link:link,
+.nav__link:visited {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
@@ -181,11 +165,14 @@ button {
   color: #163a34;
 }
 @media (max-width: 850px) {
-  .nav__link:link, .nav__link:visited {
+  .nav__link:link,
+  .nav__link:visited {
     width: 100%;
   }
 }
-.nav__active, .nav__link:hover, .nav__link:active {
+.nav__active,
+.nav__link:hover,
+.nav__link:active {
   border-bottom: 4px solid #fe9f6b;
 }
 .nav__link:focus {
@@ -227,7 +214,9 @@ button {
   .nav__item {
     padding: 0.75rem 0.5rem;
   }
-  .nav__active, .nav__link:hover, .nav__link:active {
+  .nav__active,
+  .nav__link:hover,
+  .nav__link:active {
     border-bottom: none;
   }
   .nav__btn {
@@ -248,7 +237,8 @@ button {
   padding: 0.75rem 1rem;
   border-radius: 10px;
 }
-.btn:active, .btn:hover {
+.btn:active,
+.btn:hover {
   background-color: #395852;
 }
 .btn:focus {
@@ -406,9 +396,6 @@ button {
 }
 
 /*******************\
-    Home page styles
-\*******************/
-/*******************\
     Hero 
 \*******************/
 .hero {
@@ -430,21 +417,6 @@ button {
   }
 }
 .hero__inner {
-  /*******************\
-  &::after {
-    content: "";
-    width: 100vh;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-image: url(../assets/images/pattern-squiggle-1.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-
-  }
-    \*******************/
 }
 .hero__content {
   text-align: center;
@@ -468,9 +440,6 @@ button {
   letter-spacing: -2px;
   color: #163a34;
   margin-bottom: 0.75rem;
-  /*******************\
-      Make orange background first word
-  \*******************/
 }
 @media (max-width: 850px) {
   .hero__heading {
@@ -701,9 +670,6 @@ button {
   border-radius: 16px;
 }
 
-/*******************\
-    About page styles
-\*******************/
 /*******************\
     Mission
 \*******************/
@@ -953,9 +919,6 @@ button {
 }
 
 /*******************\
-    Recipes page styles
-\*******************/
-/*******************\
     Explore
 \*******************/
 .explore__inner {
@@ -1131,9 +1094,6 @@ button {
 }
 
 /*******************\
-    Recipe page styles
-\*******************/
-/*******************\
     Breadcrumps
 \*******************/
 .breadcrumbs {
@@ -1228,9 +1188,6 @@ button {
 }
 
 /*******************\
-    instruction
-\*******************/
-/*******************\
     Recipe
 \*******************/
 .recipe__inner {
@@ -1253,7 +1210,7 @@ button {
   }
 }
 .recipe__imgs {
-  flex: 0 1 36.25rem;
+  flex: 0 0 36.25rem;
 }
 @media (max-width: 850px) {
   .recipe__imgs {
