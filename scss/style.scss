@@ -23,3 +23,14 @@
 @use "about/mission";
 @use "about/list";
 @use "about/beyond";
+
+/*******************\
+    Recipes page styles
+\*******************/
+
+@use "recipes/explore";
+@use "recipes/filters";
+@use "recipes/recipes";
+@use "recipes/meals";
+@use "recipes/info";
+@use "recipes/details";

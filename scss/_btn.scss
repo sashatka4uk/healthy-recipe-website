@@ -25,4 +25,10 @@
   &--big {
     padding: 1rem 2rem;
   }
+
+  &--recipe {
+    @include NunitoSans-B-16-150;
+    border-radius: $br-full;
+    text-align: center;
+  }
 }

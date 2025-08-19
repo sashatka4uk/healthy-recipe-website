@@ -1,30 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Frontend Mentor | Recipe finder website</title>
+  </head>
+  <body>
+    <header class="header__main">
+      <a href="index.html" class="header__logo">
+        <img
+          src="assets/images/logo.svg"
+          alt="Healthy Recipe Finder site logo"
+          width="260"
+          height="40"
+        />
+      </a>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe finder website</title>
-</head>
-<body>
+      <button class="header__mobile">
+        <img
+          src="assets/images/icon-hamburger-menu.svg"
+          alt="Open mobile navigation"
+        />
+      </button>
 
-  Explore our simple, healthy recipes
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
 
-  Discover eight quick, whole-food dishes that fit real-life 
-  schedules and taste amazing. Use the search bar to find a 
-  recipe by name or ingredient, or simply scroll the list and 
-  let something delicious catch your eye.
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About</a>
+          </li>
 
-  Max Prep Time
-  Max Cook Time
+          <li class="nav__item">
+            <a href="recipes.html" class="nav__link nav__active">Recipes</a>
+          </li>
+        </ul>
 
-  Search by name or ingredient...
-  
-  <!-- Populate recipes using data from the data.json file -->
+        <button class="nav__btn btn">Browse recipes</button>
+      </nav>
+    </header>
 
-  Made with ❤️ and 🥑
+    <main>
+      <section class="explore container">
+        <div class="explore__inner">
+          <h1 class="explore__heading">Explore our simple, healthy recipes</h1>
+          <p class="explore__text">
+            Discover eight quick, whole-food dishes that fit real-life schedules
+            and taste amazing. Use the search bar to find a recipe by name or
+            ingredient, or simply scroll the list and let something delicious
+            catch your eye.
+          </p>
+        </div>
+      </section>
 
-</body>
+      <section class="recipes container">
+        <!-- <div class="recipes__control">
+          <div class="recipes__filters filters">
+            <div class="filters__dropdown">
+              <button class="filters__btn">
+                Max Prep Time
+                <img
+                  src="assets/images/icon-chevron-down.svg"
+                  alt="Icon chevron down"
+                />
+              </button>
+              <div class="filters__dropdown-menu">
+                <label>
+                  <input type="radio" name="prep-time" value="0" />0 minutes
+                </label>
+
+                <label>
+                  <input type="radio" name="prep-time" value="5" />5 minutes
+                </label>
+
+                <label>
+                  <input type="radio" name="prep-time" value="10" />10 minutes
+                </label>
+              </div>
+              <div class="filters__clear">Clear</div>
+            </div>
+
+            <div class="filters__dropdown">
+              <button class="filters__btn">
+                Max Cook Time
+                <img
+                  src="assets/images/icon-chevron-down.svg"
+                  alt="Icon chevron down"
+                />
+              </button>
+              <div class="filters__dropdown-menu">
+                <label>
+                  <input type="radio" name="prep-time" value="0" />0 minutes
+                </label>
+
+                <label>
+                  <input type="radio" name="prep-time" value="5" />5 minutes
+                </label>
+
+                <label>
+                  <input type="radio" name="prep-time" value="10" />10 minutes
+                </label>
+
+                <label>
+                  <input type="radio" name="prep-time" value="15" />15 minutes
+                </label>
+
+                <label>
+                  <input type="radio" name="prep-time" value="20" />20 minutes
+                </label>
+              </div>
+              <div class="filters__clear">Clear</div>
+            </div>
+          </div>
+          <div class="recipes__search">
+            <input
+              type="search"
+              name="name-or-ingridient"
+              id="name-or-ingridient"
+              placeholder="Search by name or ingredient…"
+            />
+          </div>
+        </div> -->
+
+        <section class="meals">
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/mediterranean-chickpea-salad-large.webp"
+                alt="Mediterranean chickpea salad "
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/mediterranean-chickpea-salad-small.webp"
+                alt="Mediterranean chickpea salad "
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Mediterranean Chickpea Salad</h2>
+              <p class="info__text">
+                A refreshing, protein-packed salad tossed in a lemon-olive oil
+                dressing.
+              </p>
+            </div>
+            <div class="meals__details details">
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-servings.svg"
+                  alt="Icon servings"
+                />
+                Servings: 2
+              </div>
+
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-prep-time.svg"
+                  alt="Icon prep time"
+                />
+                Prep: 10 mins
+              </div>
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-cook-time.svg"
+                  alt="Icon cook time"
+                />
+                Cook: 0 min
+              </div>
+            </div>
+            <a href="#" class="meals__btn btn btn--recipe">View Recipe</a>
+          </div>
+
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/avocado-tomato-wholegrain-toast-large.webp"
+                alt="Avocado tomato wholegrain toast "
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/avocado-tomato-wholegrain-toast-small.webp"
+                alt="Avocado tomato wholegrain toast  "
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Avocado & Tomato Wholegrain Toast</h2>
+              <p class="info__text">
+                Creamy avocado spread over toasted wholegrain bread, topped with
+                juicy tomatoes.
+              </p>
+            </div>
+            <div class="meals__details details">
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-servings.svg"
+                  alt="Icon servings"
+                />
+                Servings: 1
+              </div>
+
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-prep-time.svg"
+                  alt="Icon prep time"
+                />
+                Prep: 5 mins
+              </div>
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-cook-time.svg"
+                  alt="Icon cook time"
+                />
+                Cook: 5 min
+              </div>
+            </div>
+            <a href="#" class="meals__btn btn btn--recipe">View Recipe</a>
+          </div>
+
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/salmon-asparagus-large.webp"
+                alt="Salmon asparagus large "
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/salmon-asparagus-small.webp"
+                alt="Salmon asparagus large "
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">
+                One-Pan Lemon Garlic Salmon with Asparagus
+              </h2>
+              <p class="info__text">
+                A 15-minute weeknight dinner of flaky salmon and tender
+                asparagus.
+              </p>
+            </div>
+            <div class="meals__details details">
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-servings.svg"
+                  alt="Icon servings"
+                />
+                Servings: 2
+              </div>
+
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-prep-time.svg"
+                  alt="Icon prep time"
+                />
+                Prep: 5 mins
+              </div>
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-cook-time.svg"
+                  alt="Icon cook time"
+                />
+                Cook: 12 min
+              </div>
+            </div>
+            <a href="#" class="meals__btn btn btn--recipe">View Recipe</a>
+          </div>
+
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/quinoa-veggie-bowl-large.webp"
+                alt="Quinoa veggie bowl"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/quinoa-veggie-bowl-small.webp"
+                alt="Quinoa veggie bowl"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Quinoa Veggie Power Bowl</h2>
+              <p class="info__text">
+                A balanced bowl of fluffy quinoa, roasted veggies and healthy
+                fats.
+              </p>
+            </div>
+            <div class="meals__details details">
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-servings.svg"
+                  alt="Icon servings"
+                />
+                Servings: 2
+              </div>
+
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-prep-time.svg"
+                  alt="Icon prep time"
+                />
+                Prep: 10 mins
+              </div>
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-cook-time.svg"
+                  alt="Icon cook time"
+                />
+                Cook: 15 min
+              </div>
+            </div>
+            <a href="#" class="meals__btn btn btn--recipe">View Recipe</a>
+          </div>
+
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/sweet-potato-tacos-large.webp"
+                alt="Sweet potato tacos"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/sweet-potato-tacos-small.webp"
+                alt="Sweet potato tacos"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Sweet Potato Black Bean Tacos</h2>
+              <p class="info__text">
+                Smoky roasted sweet potatoes and black beans tucked into warm
+                tortillas.
+              </p>
+            </div>
+            <div class="meals__details details">
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-servings.svg"
+                  alt="Icon servings"
+                />
+                Servings: 3
+              </div>
+
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-prep-time.svg"
+                  alt="Icon prep time"
+                />
+                Prep: 10 mins
+              </div>
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-cook-time.svg"
+                  alt="Icon cook time"
+                />
+                Cook: 15 min
+              </div>
+            </div>
+            <a href="#" class="meals__btn btn btn--recipe">View Recipe</a>
+          </div>
+
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/greek-yogurt-large.webp"
+                alt="Greek yogurt"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/greek-yogurt-small.webp"
+                alt="Greek yogurt"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Greek Yogurt Berry Parfait</h2>
+              <p class="info__text">
+                Layers of creamy yogurt, fresh berries and crunchy oats for a
+                high-protein snack.
+              </p>
+            </div>
+            <div class="meals__details details">
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-servings.svg"
+                  alt="Icon servings"
+                />
+                Servings: 1
+              </div>
+
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-prep-time.svg"
+                  alt="Icon prep time"
+                />
+                Prep: 5 mins
+              </div>
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-cook-time.svg"
+                  alt="Icon cook time"
+                />
+                Cook: 0 min
+              </div>
+            </div>
+            <a href="#" class="meals__btn btn btn--recipe">View Recipe</a>
+          </div>
+
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/lentil-soup-large.webp"
+                alt="Greek yogurt"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/lentil-soup-small.webp"
+                alt="Greek yogurt"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Lentil & Spinach Soup</h2>
+              <p class="info__text">
+                A hearty 30-minute soup rich in plant protein and iron.
+              </p>
+            </div>
+            <div class="meals__details details">
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-servings.svg"
+                  alt="Icon servings"
+                />
+                Servings: 4
+              </div>
+
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-prep-time.svg"
+                  alt="Icon prep time"
+                />
+                Prep: 10 mins
+              </div>
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-cook-time.svg"
+                  alt="Icon cook time"
+                />
+                Cook: 20 min
+              </div>
+            </div>
+            <a href="#" class="meals__btn btn btn--recipe">View Recipe</a>
+          </div>
+
+          <div class="meals__card">
+            <div class="meals__img">
+              <img
+                class="hide__mobile"
+                src="assets/images/banana-pancakes-large.webp"
+                alt="Banana pancakes"
+              />
+              <img
+                class="hide__desktop"
+                src="assets/images/banana-pancakes-small.webp"
+                alt="Banana pancakes"
+              />
+            </div>
+            <div class="meals__info info">
+              <h2 class="info__heading">Banana Oat Pancakes</h2>
+              <p class="info__text">
+                Flour-free pancakes sweetened naturally with ripe bananas.
+              </p>
+            </div>
+            <div class="meals__details details">
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-servings.svg"
+                  alt="Icon servings"
+                />
+                Servings: 2
+              </div>
+
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-prep-time.svg"
+                  alt="Icon prep time"
+                />
+                Prep: 5 mins
+              </div>
+              <div class="details__element">
+                <img
+                  src="assets/images/icon-cook-time.svg"
+                  alt="Icon cook time"
+                />
+                Cook: 10 min
+              </div>
+            </div>
+            <a href="#" class="meals__btn btn btn--recipe">View Recipe</a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="footer__text">Made with ❤️ and 🥑</p>
+      <div class="footer__links">
+        <a href="https://www.instagram.com/" class="footer__link">
+          <img
+            src="assets/images/icon-instagram.svg"
+            alt="Instagram sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.bsky.app" class="footer__link">
+          <img
+            src="assets/images/icon-bluesky.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+
+        <a href="https://www.tiktok.com" class="footer__link">
+          <img
+            src="assets/images/icon-tiktok.svg"
+            alt="Bluesky sotial link"
+            class="footer__icon"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
